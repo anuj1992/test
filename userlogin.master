@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="userlogin.master.cs" Inherits="userlogin" %>
+
+<%@ Register Assembly="SPCS.AspDotNet" Namespace="SPCS.AspDotNet" TagPrefix="cc1" %>
+
+<%@ Register src="footer.ascx" tagname="footer" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>userloginmaster</title>
+    <link rel="Shortcut Icon" href="images/ole.ico" />
+    <link href="css/keyboard.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+  
+</head>
+<body>
+    <form id="form1" runat="server">
+ <center>
+<div class="container">
+
+<!-- head -->
+    <div class="head">
+       <!-- <img alt="" src="images/banner1.png" />-->
+</div>
+    
+<!-- navigation menu -->
+        <div class="nav">
+	<font color="silver"><marquee direction= "right" scrolldelay="100" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()";><b>Online Examination</b></marquee></font>
+</div>
+<!-- body  content -->
+
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>   
+<!--Footer-->
+<div class="foot" >
+
+   <marquee  scrolldelay="10" scrollamount="2" onmouseover="this.stop()" onmouseout="this.start()">
+   <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></marquee>
+</div> 
+
+</div>
+
+
+
+<!--Mysterious Design-->
+</center>
+</form> 
+</body>
+</html>

@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="userhome.master.cs" Inherits="userhome" %>
+
+<%@ Register src="userhomelink.ascx" tagname="userhomelink" tagprefix="uc1" %>
+<%@ Register src="userhomesidelink.ascx" tagname="userhomesidelink" tagprefix="uc2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link href="vertical.css" rel="stylesheet" type="text/css" />
+    <link rel="Shortcut Icon" href="images/ole.ico" />
+    <link href="but.css" rel="stylesheet" type="text/css" />
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+<link href="style.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        .style1
+        {
+            font-size: 13px;
+            color: white;
+            padding-right: 25px;
+            text-decoration: none;
+            padding-left: 4px;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        .style2
+        {
+            width: 157px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+ <center>
+<div class="container">
+
+<!-- head -->
+<div class="head">
+   <!-- <img alt="" src="images/banner1.png"  />-->
+  </div>  
+    
+<!-- navigation menu -->
+<div class="nav">
+<a class="style1" href="userhome.aspx">Home</a><big><big>|</big></big> 
+<big><big>|</big></big> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<asp:LinkButton ID="LinkButton1" runat="server" ForeColor="White" 
+        onclick="LinkButton1_Click1" Font-Size="Small" Visible="false">Logout</asp:LinkButton>
+	
+</div>
+
+<!-- body  content -->
+<table border="0"  cellpadding="0" width="100%">
+<tr>
+<td class="style2" valign="top">
+ <div id="nav">
+    <ul class="top-level">
+        <li><a href="onlineexam.aspx">Online Exams</a>
+        </li>
+       
+           
+    </ul>
+</div>
+</td> <td><div>
+                             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                             </asp:ContentPlaceHolder></div>
+                         </td>
+</tr>
+</table>
+	
+
+
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div class="foot"><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></div>
+
+</div>
+</center>       
+
+<!--Mysterious Design-->
+    </form>
+</body>
+</html>

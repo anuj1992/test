@@ -1,0 +1,117 @@
+ body  
+ {
+ 	font-variant: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: normal;
+	font-family: arial;
+	text-align: left;
+	/*background-image: url(bg.png);
+	background-repeat:repeat-x repeat-y;*/
+}
+.container { width: 1024px;
+             height:auto;
+             border:solid 1px #006666;
+             border-radius:20px;
+             -moz-border-radius:20px;
+             -webkit-border-radius:20px;
+             box-shadow:7px 7px  16px;
+             }
+.head1{background-image: url(images/adminpanel.png); 
+background-color:#006666;
+	width: 1024px;
+	height:241px;
+	-webkit-border-radius:20px 20px 0px 0px;
+	-moz-border-radius:20px 20px 0px 0px;
+	 border-radius:20px 20px 0px 0px;
+}
+.head 
+{
+	-webkit-border-radius:20px 20px 0px 0px;
+	-moz-border-radius:20px 20px 0px 0px;
+	 border-radius:20px 20px 0px 0px;
+background-image: url(images/banner1.png); 
+background-color:#006666;
+	width: 1024px;
+	height:241px;
+	
+}
+.foot 
+{
+	clear:left;
+	width:100%;
+	color:#ccc;
+	background-image:url(images/header1.png);
+	background-repeat:repeat-x;
+	line-height:35px;
+	text-align:center;
+	border-radius:0px 0px 20px 20px;
+	-moz-border-radius:0px 0px 20px 20px;
+	-webkit-border-radius:0px 0px 20px 20px;
+	font-size:small;
+	
+}
+.newbr
+{
+	width:100%;
+	border:solid 1px #006666;
+	
+}
+a{
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	color:#ccc;
+	background-color:#006666;
+	
+	
+	font-size:14px;
+}
+a:hover{
+	color: #fff;
+}
+	
+.foot a { color: #FFFFFF; text-decoration: none; }
+.nav { text-align: right; 
+ line-height: 35px; background-image: url(images/header1.png)
+}
+.nav_text { font-size: 13px; color: black; padding-right: 25px; text-decoration: none;
+	text-align: left;
+	padding-left: 4px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+h1 { font: 25px arial; }
+h2 {  color: #FFFFFF; padding: 5px; font-weight: bold; background: url(images/header1.png);
+      background-repeat:repeat-x;
+	font-size: 15px;
+	font-family: arial;
+	width:100%;
+	height: 23px;
+	text-align: left;
+	padding-left:0px;
+}
+
+.button { background: url(images/bt.png); border: 0px solid #000000; color: #FFFFFF; font: 12px arial; padding: 4px;
+	margin-left: 0px;
+}
+:-webkit-full-screen #form1 {
+	  font-size: 20px;
+	  width: 100%;
+	}
+	:-moz-full-screen #form1 {
+	  font-size: 20px;
+	  width: 100%;
+	}
+	.sub{
+		float: left;
+		margin-top:18px;
+		margin-left:60px;
+	
+	}
+	.btn33CCFF
+	{
+		background-image:url("button/33CCFF.png");
+		background-repeat:repeat-x;
+		width:30px;
+	}
+		

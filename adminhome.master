@@ -1,0 +1,99 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminhome.master.cs" Inherits="adminhome" %>
+
+<%@ Register src="adminlink.ascx" tagname="adminlink" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="Shortcut Icon" href="images/ole.ico" />
+    <link href="vertical.css" rel="stylesheet" type="text/css" />
+    <link href="but.css" rel="stylesheet" type="text/css" />
+     <link rel="stylesheet" href="image/main.css"/>
+					<script type="text/javascript" language="javascript" src="image/prototype-
+1.js"></script>
+			<script type="text/javascript" language="javascript" src="image/prototype-base-
+extensions.js"></script>
+			<script type="text/javascript" language="javascript" src="image/prototype-date-
+extensions.js"></script>
+			<script type="text/javascript" language="javascript" src="image/behaviour.js"></script>
+							<script type="text/javascript" language="javascript" 
+src="image/datepicker.js"></script>
+										<link rel="stylesheet" href="image/datepicker.css" />
+							<script type="text/javascript" language="javascript" 
+src="image/behaviors.js"></script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+ <script src="SpryMenuBar.js" type="text/javascript"></script>
+
+<link href="SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<form align="center" id="form1" runat="server">
+<center>
+<div class="container">
+<!-- head -->
+<div class="head1">
+
+    
+    </div>
+    <!-- navigation marquee text -->
+    <div class="contain">
+    <table width="800px" border="0"><tr><td>
+            <ul id="MenuBar1" class="MenuBarHorizontal">
+       <li><a  href="adminmenu.aspx">Home</a></li>     
+  <li><a class="MenuBarItemSubmenu" href="#">Entry</a>
+    <ul>
+      <li><a href="insertnewbranch.aspx">Branch Entry</a></li>
+      <li><a href="insertstuinfo.aspx">Student Entry</a></li>
+      <li><a href="insertquestion.aspx">Questions Entry</a></li>
+    </ul>
+  </li>
+<!-- <li><a href="#">Item 2</a></li> Item without sub item--> 
+  <li><a class="MenuBarItemSubmenu" href="#">Examination</a>
+    <ul>
+      <li><a class="MenuBarItemSubmenu" href="#">Item 3.1</a>
+        <ul>
+          <li><a href="#">Item 3.1.1</a></li>
+          <li><a href="#">Item 3.1.2</a></li>
+        </ul>
+      </li>
+      <li><a href="createexamination.aspx">Create Exam</a></li>
+      <li><a href="showexam.aspx">Schedule Exam</a></li>
+    </ul>
+  </li>
+  <li><a href="examresult.aspx">Reports</a>
+        <ul>
+        </ul>
+    </li>
+</ul></td>
+<td align="right">
+<asp:LinkButton ID="LinkButton2"  runat="server" 
+        ForeColor="White" onclick="LinkButton1_Click" Font-Bold="True" >Logout</asp:LinkButton></td>
+</tr></table>
+
+<script type="text/javascript">
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"SpryAssets/SpryMenuBarDownHover.gif", imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+</script>
+</div>
+  
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+  
+                            
+<div class="foot"> <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></div>                    
+          
+    </div> 
+
+</center>
+
+</form>
+   
+
+</body>
+    
+
+<!--Mysterious Design-->
+    
+</html>

@@ -1,0 +1,44 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="adminlogin.master.cs" Inherits="adminlogin" %>
+
+<%@ Register src="footer.ascx" tagname="footer" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Untitled Page</title>
+    <link rel="Shortcut Icon" href="images/ole.ico" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+    
+</head>
+<body>
+<form align="center" id="form1" runat="server">
+<center>
+<div class="container">
+
+<!-- head -->
+<div class="head1"><br />
+<!--<span style="font-family:Trebuchet MS; font-size: 6em; font-weight:bold; color: #006666">Admin Panel</span>-->
+    </div>
+<!-- navigation marquee text -->
+<div class="nav">
+	<marquee behavior="alternate"  ><font color="silver"><big><b>Admin Panel</b></big> </font></marquee>
+</div>
+<!-- body  content --> 
+<br /> 
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                
+        
+
+<div class="foot"><marquee direction="left" scrolldelay="100"><asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></marquee></div>
+</div>
+
+<!--Mysterious Design-->
+    </center>
+    </form>
+</body>
+</html>
